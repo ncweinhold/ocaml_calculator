@@ -13,6 +13,7 @@
 %%
 
 program:
+  | NEWLINE { 0 }
   | expression = expr NEWLINE { expression }
   | expression = expr EOF { expression }
 ;
